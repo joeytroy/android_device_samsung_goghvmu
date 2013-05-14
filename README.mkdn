@@ -20,7 +20,7 @@ Once you are synced run the following command inside the source folder to downlo
 
     git clone git://github.com/vmobi-victory/android_device_samsung_goghvmu.git -b jellybean device/samsung/goghvmu
 
-The download the vendor files
+Then download the vendor files
 
     git clone git://github.com/vmobi-victory/android_vendor_samsung_goghvmu.git -b jellybean vendor/samsung/goghvmu
 
