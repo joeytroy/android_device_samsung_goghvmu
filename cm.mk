@@ -1,8 +1,15 @@
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
+$(call inherit-product, vendor/cm/config/cdma.mk)
 
 # Release name
 PRODUCT_RELEASE_NAME := goghvmu
+
+# Enhanced NFC
+$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+
+# Boot animation
+TARGET_SCREEN_WIDTH := 480
+TARGET_SCREEN_HEIGHT := 800
 
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
@@ -14,5 +21,5 @@ $(call inherit-product, device/samsung/goghvmu/device_goghvmu.mk)
 PRODUCT_DEVICE := goghvmu
 PRODUCT_NAME := cm_goghvmu
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := goghvmu
+PRODUCT_MODEL := SPH-L300
 PRODUCT_MANUFACTURER := samsung
