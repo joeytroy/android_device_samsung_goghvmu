@@ -2,7 +2,7 @@ bin/at_distributor
 bin/ATFWD-daemon
 bin/bridgemgrd
 bin/btnvtool
-bin/bugmailer.sh
+bin/bugreport
 bin/geomagneticd
 bin/hci_qcomm_init
 bin/immvibed
@@ -16,8 +16,6 @@ bin/orientationd
 bin/port-bridge
 bin/qmiproxy
 bin/qmuxd
-bin/quipc_igsn
-bin/quipc_main
 bin/rmt_storage
 bin/sec-ril
 bin/thermald
@@ -31,7 +29,6 @@ etc/firmware/wcnss.b01
 etc/firmware/wcnss.b02
 etc/firmware/wcnss.b04
 etc/firmware/wcnss.b05
-etc/firmware/wcnss.b06
 etc/firmware/wcnss.mdt
 etc/firmware/wlan/prima/WCNSS_cfg.dat
 etc/firmware/wlan/prima/WCNSS_qcom_cfg.ini
@@ -123,8 +120,7 @@ lib/libwvdrm_L3.so
 lib/libwvm.so
 lib/libWVphoneAPI.so
 lib/libWVStreamControlAPI_L3.so
-lib/libxt_native.so
-lib/libxt_v02.so
+lib/libXt9core.so
 vendor/firmware/libpn544_fw.so
 
 # adreno Android 4.1.2
@@ -133,8 +129,6 @@ etc/firmware/a225_pm4.fw
 etc/firmware/a225p5_pm4.fw
 etc/firmware/leia_pfp_470.fw
 etc/firmware/leia_pm4_470.fw
-etc/firmware/yamato_pfp.fw
-etc/firmware/yamato_pm4.fw
 lib/egl/egl.cfg
 lib/egl/eglsubAndroid.so
 lib/egl/libEGL_adreno200.so
@@ -142,7 +136,6 @@ lib/egl/libGLESv1_CM_adreno200.so
 lib/egl/libGLESv2_adreno200.so
 lib/egl/libGLESv2S3D_adreno200.so
 lib/egl/libq3dtools_adreno200.so
-lib/libc2d2_z180.so
 lib/libC2D2.so
 lib/libgsl.so
 lib/libOpenVG.so

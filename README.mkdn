@@ -1,0 +1,39 @@
+CyanogenMod for goghvmu
+=======================
+
+Getting Started
+---------------
+
+To get started with Android/CyanogenMod, you'll need to set up your [Ubuntu Environment](http://vmobi.us/?page_id=8).
+Once completed you will need To initialize your local repository using the CyanogenMod trees, use a command like this:
+
+    repo init -u git://github.com/CyanogenMod/android.git -b jellybean
+
+Then to sync up:
+
+    repo sync
+
+Device / Vendor Files
+---------------------
+
+Once you are synced run the following command inside the source folder to download the device files
+
+    git clone git://github.com/vmobi-victory/android_device_samsung_goghvmu.git -b jellybean device/samsung/goghvmu
+
+The download the vendor files
+
+    git clone git://github.com/vmobi-victory/android_vendor_samsung_goghvmu.git -b jellybean vendor/samsung/goghvmu
+
+Now run grab the CyanogenMod prebuilts
+
+    vendor/cm/get-prebuilts 
+
+Building
+--------
+
+Once the device and vendor files are set up it is now time to build
+
+    . build/envsetup.sh && brunch goghvmu -j#
+
+The # stands for the ammount of threads to use per cpu core. Google recommends two threads 
+per core, so if you have eight cores on your system you would use -j16.
