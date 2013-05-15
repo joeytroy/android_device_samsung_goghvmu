@@ -20,6 +20,7 @@ debug.egl.hw=1
 debug.composition.type=dyn
 debug.compbypass.enable=1
 dalvik.vm.heapsize=36m
+dalvik.vm.dexopt-data-only=1
 debug.enable.wl_log=1
 
 # QC Perf
