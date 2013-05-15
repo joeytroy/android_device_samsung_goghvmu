@@ -180,7 +180,12 @@ PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
     
 # NFCEE access control
-PRODUCT_COPY_FILES += $(LOCAL_PATH)/config/nfcee_access.xml:system/etc/nfcee_access.xml
+ifeq ($(TARGET_BUILD_VARIANT),user)
+    NFCEE_ACCESS_PATH := $(LOCAL_PATH)/config/nfcee_access.xml
+else
+    NFCEE_ACCESS_PATH := $(LOCAL_PATH)/config/nfcee_access_debug.xml
+endif
+PRODUCT_COPY_FILES += $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xmll
 
 #audio
 #PRODUCT_COPY_FILES += \

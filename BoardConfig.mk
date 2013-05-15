@@ -6,7 +6,7 @@ USE_CAMERA_STUB := true
 -include vendor/samsung/goghvmu/BoardConfigVendor.mk
 
 #Assert 
-TARGET_OTA_ASSERT_DEVICE := goghvmu,goghvmu,Axiom,Victory,SPH-L300
+TARGET_OTA_ASSERT_DEVICE := goghspr,goghvmu,Axiom,Victory,SPH-L300
 
 # Arch
 TARGET_CPU_ABI := armeabi-v7a
@@ -67,7 +67,7 @@ COMMON_GLOBAL_CFLAGS += -DQCOM_NO_SECURE_PLAYBACK
 TARGET_PREBUILT_KERNEL := device/samsung/goghvmu/kernel
 #TARGET_KERNEL_CONFIG := infinite_defconfig
 #TARGET_KERNEL_CONFIG := gogh_defconfig
-#TARGET_KERNEL_SOURCE := kernel/samsung/goghvmu/
+#TARGET_KERNEL_SOURCE := kernel/samsung/gogh/
 
 # Enable Bluetooth 
 BOARD_HAVE_BLUETOOTH := true
